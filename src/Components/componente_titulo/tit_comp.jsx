@@ -1,15 +1,15 @@
 
-function titulo() {
+function Tit_comp() {
 
     return (
-
         <div className='nav'>
             <h1>Mi Portafolio</h1>
         </div>
+        
     );
 }
 
-export default titulo;
+export default Tit_comp;
 
 
 /*const tit_comp = ()=> {
@@ -27,3 +27,4 @@ const App = ()=> {
 }
 export default App;
 */
+
