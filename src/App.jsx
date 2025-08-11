@@ -15,13 +15,7 @@ function App() {
     </>
 
   )
-  return (
-      <>
-
-      <titulo/>
-      </>
-
-    )
+  
 
 }
 
