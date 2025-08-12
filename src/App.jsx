@@ -9,10 +9,14 @@ function App() {
   
 
   return (
-    <>
-    <Navegation/>
-    <Tit_comp />
-    </>
+    <div className="app-container">
+      <div className="nave">
+        <Navegation/>
+      </div>
+      <main className="main-content">
+        <Tit_comp />
+      </main>
+    </div>
 
   )
   

@@ -1,7 +1,21 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  
+  
+  
+  width: 100%;
+}
+
 .nav{
   height: 60px;
   width: 100%;
-  background-color: #fff;
+  
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -10,6 +24,27 @@
   font-weight: bold;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+}
+
+.nave {
+  background-color: #fff;
+  width: 100%;
+}
+
+.titulo-section {
+  text-align: center;
+  padding: 40px 20px;
+  
+  
+  border-radius: 8px;
+  
+}
+
+.titulo-section h1 {
+  margin: 0;
+  color: #578E7E;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .nav h1 {
