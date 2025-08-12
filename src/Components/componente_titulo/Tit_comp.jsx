@@ -1,7 +1,7 @@
 function Tit_comp() {
 
     return (
-        <div className='nav'>
+        <div className='titulo-section'>
             <h1>Mi Portafolio</h1>
         </div>
         
