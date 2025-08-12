@@ -1,4 +1,3 @@
-
 function Tit_comp() {
 
     return (
@@ -10,6 +9,3 @@ function Tit_comp() {
 }
 
 export default Tit_comp;
-
-
-
