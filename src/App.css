@@ -65,3 +65,8 @@
 .nav-1 a:hover {
   color: #578E7E;
 }
+
+.tarjeta {
+   text-align: center;
+   margin-top: 30px;
+}
