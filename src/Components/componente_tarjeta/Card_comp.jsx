@@ -9,6 +9,15 @@ function Card_comp() {
         </div>
 
     );
+}
+function Tarjeta2() {
+    return (
+        <div className="tarjeta">
+            <img src="/img/perfil.png" className="tarjeta-img" />
+            <h2>Romel Denis AQ </h2>
+            <p>Aprendiz de todo, maestro de nada</p>
+        </div>
+    );
 
 }
 
