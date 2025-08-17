@@ -1,11 +1,10 @@
-function Tit_comp() {
+function TituloComponent() {
 
     return (
         <div className='titulo-section'>
             <h1>Mi Portafolio</h1>
         </div>
-        
     );
 }
 
-export default Tit_comp;
+export default TituloComponent;
