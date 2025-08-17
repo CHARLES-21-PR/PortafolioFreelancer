@@ -14,17 +14,18 @@
 
 .cards {
   display: flex;
-  justify-content: space-evenly;
+  
   background-color: aqua;
 }
 
 .tarjeta {
   background-color: blue;
+  width: 30%;
 }
 
 .card-body {
   background-color: white;
-  
+  width: 70%;
 }
 
 .nav{
