@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Navegation from './Components/Navegation';
-import Tit_comp from './Components/componente_titulo/Tit_comp';
-import Card_comp from   './Components/componente_tarjeta/Card_comp';
+import Navegation from './Components/Navegation'
+import Tit_comp from './Components/componente_titulo/TituloComponent'
+import Card_comp from './Components/componente_tarjeta/Card_comp'
 import CardBody_comp from './Components/componente_tarjeta/CardBody_comp'
-import { useTheme } from './contexts/ThemeContext';
+import { useTheme } from './contexts/ThemeContext'
 import './App.css'
 
 function App() {
