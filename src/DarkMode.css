@@ -1,0 +1,79 @@
+/* Estilos para el modo oscuro */
+.dark-mode {
+  background-color: #533a4a;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .nav {
+  background-color: #2d3748;
+  color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .nave {
+  background-color: #2d3748;
+}
+
+.dark-mode .tarjeta-img {
+  color: #000000 !important;
+  fill: #000000 !important;
+}
+
+.dark-mode .tarjeta h2 {
+    color: #000000;
+}
+
+.dark-mode .nav h1 {
+  color: #81c784;
+}
+
+.dark-mode .nav-1 a {
+  color: #e0e0e0;
+}
+
+.dark-mode .nav-1 a:hover {
+  color: #81c784;
+}
+
+.dark-mode .nav-1 ul::after {
+  background-color: #81c784;
+}
+
+.dark-mode .titulo-section {
+  background-color: #34404e;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .titulo-section h1 {
+  color: #81c784;
+}
+
+.dark-mode .main-content {
+  background-color: #34404e;
+}
+
+.dark-mode .idiomas-button {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.dark-mode .temas-button {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.dark-mode .btn-esp, 
+.dark-mode .btn-eng,
+.dark-mode .btn-white,
+.dark-mode .btn-dark {
+  color: #e0e0e0;
+}
+
+.dark-mode .btn-esp:hover, 
+.dark-mode .btn-eng:hover,
+.dark-mode .btn-white:hover,
+.dark-mode .btn-dark:hover {
+  color: #81c784;
+}

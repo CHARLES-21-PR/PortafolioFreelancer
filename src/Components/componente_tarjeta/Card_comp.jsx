@@ -1,11 +1,19 @@
+import { FaCheckCircle } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
+import IdiomasButton from "../componente_buttonBolean/IdiomasButton";
+import TemasWOB from "../componente_buttonBolean/TemasWOB";
 
 function Card_comp() {
 
     return (
         <div className="tarjeta">
-            <img src="/img/perfil.png" className="tarjeta-img" />
-            <h2>FreelancerGroup</h2>
-            <p>Front-end Developer</p>
+            <FaUserCircle className="tarjeta-img" />
+            <h2>FreelancerGroup <FaCheckCircle /></h2>
+            <a href="#">@FreelancerGroup</a>
+            <div className="btnBolean">
+                <IdiomasButton />
+                <TemasWOB />
+            </div>
         </div>
 
     );

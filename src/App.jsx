@@ -5,12 +5,15 @@ import Navegation from './Components/Navegation';
 import Tit_comp from './Components/componente_titulo/tit_comp';
 import Card_comp from   './Components/componente_tarjeta/Card_comp';
 import CardBody_comp from './Components/componente_tarjeta/CardBody_comp'
+import { useTheme } from './contexts/ThemeContext';
 import './App.css'
 
 function App() {
+  const { isDarkMode } = useTheme();
+
   return (
     <>
-    <div className="app-container">
+    <div className={`app-container ${isDarkMode ? 'dark-mode' : ''}`}>
       <Navegation/>
       <div className="main-content">
         <Tit_comp />
