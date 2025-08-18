@@ -15,6 +15,15 @@
   background-color: #2d3748;
 }
 
+.dark-mode .tarjeta {
+  background-color: #48525d;
+}
+
+.dark-mode .tarjeta a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
 .dark-mode .tarjeta-img {
   color: #000000 !important;
   fill: #000000 !important;

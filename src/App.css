@@ -27,6 +27,7 @@
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1);
+  gap: 10px;
 }
 
 .tarjeta h2 {
@@ -128,7 +129,7 @@
 }
 
 .sliding-background-theme.dark {
-  background-color: #2C3E50;
+  background-color: #686969;
   transform: translateX(calc(100% + 10px));
 }
 
@@ -247,12 +248,25 @@
   color: #578E7E;
 }
 
-.tarjeta {
-   
-   
+.tarjeta a{
+  text-decoration: none;
 }
 
 .tarjeta-img {
     width: 100px;
     height: 100px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .tarjeta {
+        width: 80% !important;
+        max-width: 400px;
+    }
 }
