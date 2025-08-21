@@ -1,6 +1,6 @@
 import Navegation from './Components/Navegation.jsx'
 import TituloComponent from './Components/componente_titulo/TituloComponent.jsx'
-import Card_comp from './Components/componente_tarjeta/card_comp.jsx'
+import Card_comp from './Components/componente_tarjeta/Card_comp.jsx'
 import { useTheme } from './contexts/ThemeContext'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Components/componente_tarjeta/Routes/Home.jsx'
