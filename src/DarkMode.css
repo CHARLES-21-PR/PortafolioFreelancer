@@ -19,18 +19,32 @@
   background-color: #48525d;
 }
 
-.dark-mode .tarjeta a {
-  text-decoration: none;
+.dark-mode .route-content {
+  background-color: #48525d;
   color: #e0e0e0;
 }
 
-.dark-mode .tarjeta-img {
-  color: #000000 !important;
-  fill: #000000 !important;
+.dark-mode .route-content::before {
+  background-color: #6a7580;
 }
 
 .dark-mode .tarjeta h2 {
-    color: #000000;
+  color: #e0e0e0;
+}
+
+.dark-mode .tarjeta h2 svg {
+  color: #81c784;
+  fill: #81c784;
+}
+
+.dark-mode .tarjeta a {
+  text-decoration: none;
+  color: #81c784;
+}
+
+.dark-mode .tarjeta-img {
+  color: #e0e0e0 !important;
+  fill: #e0e0e0 !important;
 }
 
 .dark-mode .nav h1 {
