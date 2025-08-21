@@ -1,12 +1,10 @@
-
-import Navegation from './Components/Navegation'
-import TituloComponent from './Components/componente_titulo/TituloComponent'
-import Card_comp from './Components/componente_tarjeta/card_comp'
-// import CardBody_comp from './Components/componente_tarjeta/CardBody_comp'
+import Navegation from './Components/Navegation.jsx'
+import TituloComponent from './Components/componente_titulo/TituloComponent.jsx'
+import Card_comp from './Components/componente_tarjeta/card_comp.jsx'
 import { useTheme } from './contexts/ThemeContext'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './Components/componente_tarjeta/Routes/Home'
-import Projects from './Components/componente_tarjeta/Routes/Projects'
+import Home from './Components/componente_tarjeta/Routes/Home.jsx'
+import Projects from './Components/componente_tarjeta/Routes/Projects.jsx'
 import './App.css'
 
 function App() {
