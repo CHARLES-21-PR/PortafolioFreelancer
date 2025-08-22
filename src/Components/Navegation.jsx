@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 function Navegation() {
   return (
@@ -7,12 +9,17 @@ function Navegation() {
       <div className='nav-1'>
         <ul>
             <li>
-                <a href="">LinkedIn</a>
+                <a href="">LinkedIn
+                  <FaLinkedin />
+                </a>
+                
             </li>
         </ul>
         <ul>
             <li>
-                <a href="">Github</a>
+                <a href="">Github
+                  <FaGithub />
+                </a>
             </li>
         </ul>
         

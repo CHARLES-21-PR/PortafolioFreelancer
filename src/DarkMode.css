@@ -5,6 +5,10 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.dark-mode .app-container {
+  background-color: #34404e;
+}
+
 .dark-mode .nav {
   background-color: #2d3748;
   color: #e0e0e0;
@@ -19,13 +23,31 @@
   background-color: #48525d;
 }
 
+.dark-mode .tarjeta::after {
+  background-color: #6a7580;
+}
+
 .dark-mode .route-content {
   background-color: #48525d;
   color: #e0e0e0;
+  scrollbar-color: #81c784 #2d3748;
 }
 
 .dark-mode .route-content::before {
   background-color: #6a7580;
+}
+
+/* Scrollbar personalizada para modo oscuro */
+.dark-mode .route-content::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.dark-mode .route-content::-webkit-scrollbar-thumb {
+  background: #81c784;
+}
+
+.dark-mode .route-content::-webkit-scrollbar-thumb:hover {
+  background: #66bb6a;
 }
 
 .dark-mode .tarjeta h2 {
@@ -77,6 +99,10 @@
   background-color: #34404e;
 }
 
+.dark-mode .content-layout {
+  background-color: #34404e;
+}
+
 .dark-mode .idiomas-button {
   background-color: #2d3748;
   border-color: #4a5568;
@@ -99,4 +125,42 @@
 .dark-mode .btn-white:hover,
 .dark-mode .btn-dark:hover {
   color: #81c784;
+}
+
+/* Estilos para cardRol en modo oscuro */
+.dark-mode .cardRol .cardItem {
+  background-color: #2d3748;
+  border-color: #4a5568;
+  color: #e0e0e0;
+}
+
+.dark-mode .cardRol .cardItem:hover {
+  background: linear-gradient(135deg, rgba(129, 199, 132, 0.1) 0%, rgba(129, 199, 132, 0.3) 100%);
+}
+
+.dark-mode .cardRol .cardItem .user-icon {
+  color: #81c784;
+}
+
+/* Estilos para texto en route-content en modo oscuro */
+.dark-mode .route-content h1,
+.dark-mode .route-content h2,
+.dark-mode .route-content h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .route-content p,
+.dark-mode .route-content li {
+  color: #e0e0e0;
+}
+
+.dark-mode .home-container h1,
+.dark-mode .home-container h2,
+.dark-mode .home-container h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .home-container p,
+.dark-mode .home-container li {
+  color: #e0e0e0;
 }

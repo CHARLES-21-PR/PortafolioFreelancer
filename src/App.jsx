@@ -1,5 +1,5 @@
 import Navegation from './Components/Navegation.jsx'
-import TituloComponent from './Components/componente_titulo/TituloComponent.jsx'
+
 import Card_comp from './Components/componente_tarjeta/Card_comp.jsx'
 import { useTheme } from './contexts/ThemeContext'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -15,7 +15,7 @@ function App() {
       <div className={`app-container ${isDarkMode ? 'dark-mode' : ''}`}>
         <Navegation/>
         <div className="main-content">
-          <TituloComponent />
+          
           <div className="content-layout">
             <div className="cards">
               <Card_comp/>
