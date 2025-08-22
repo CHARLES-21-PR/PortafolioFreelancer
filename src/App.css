@@ -455,7 +455,33 @@
     }
     
     .route-content {
-        min-height: 200px;
+        min-height: 600px;
         border-radius: 20px;
+    }
+}
+
+@media (max-width: 396px) {
+    .home-container h1 {
+        font-size: 2rem;
+    }
+
+    .home-container h2 {
+        font-size: 1.25rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    .cardRol {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-1 {
+      gap: 5px;
+    }
+
+    .nav-1 a {
+      padding: 0;
     }
 }
