@@ -1,6 +1,6 @@
 import Navegation from './Components/Navegation.jsx'
 import { useState } from 'react'
-import Card_comp from './Components/componente_tarjeta/card_comp.jsx'
+import TarjetaCard from './Components/componente_tarjeta/TarjetaCard.jsx'
 import { useTheme } from './contexts/ThemeContext'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Components/componente_tarjeta/Routes/Home.jsx'
@@ -27,7 +27,7 @@ function App() {
           
           <div className="content-layout">
             <div className={`cards ${isMenuOpen ? 'mobile-open' : ''}`}>
-              <Card_comp onRouteClick={closeMenu}/>
+              <TarjetaCard onRouteClick={closeMenu}/>
             </div>
             
             
