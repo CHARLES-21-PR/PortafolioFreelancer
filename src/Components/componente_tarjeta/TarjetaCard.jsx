@@ -1,7 +1,7 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
 import { FaHome, FaProjectDiagram } from "react-icons/fa";
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import IdiomasButton from "../componente_buttonBolean/IdiomasButton";
 import TemasWOB from "../componente_buttonBolean/TemasWOB";
 import { FaLinkedin } from "react-icons/fa6";
@@ -9,6 +9,8 @@ import { FaGithub } from "react-icons/fa";
 
 
 function TarjetaCard({ onRouteClick }) {
+    const location = useLocation();
+    const isHome = location.pathname === '/' || location.pathname === '/home';
 
     return (
         <div className="tarjeta">
@@ -43,7 +45,12 @@ function TarjetaCard({ onRouteClick }) {
                 <div className="navCard-1">
                     <ul>
                         <li>
-                            <NavLink to="/home" onClick={onRouteClick}>
+                            <NavLink 
+                                to="/" 
+                                onClick={onRouteClick} 
+                                className={isHome ? 'active' : ''}
+                                end
+                            >
                                 <FaHome /> Home
                             </NavLink>
                         </li>

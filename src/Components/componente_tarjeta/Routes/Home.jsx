@@ -2,6 +2,17 @@ import { CiUser } from "react-icons/ci";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiSpringboot } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { DiMongodb } from "react-icons/di";
+import { FaFigma } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { VscAzure } from "react-icons/vsc";
 
 function Home() {
     return (
@@ -28,11 +39,15 @@ function Home() {
                         <CiUser className="user-icon" />
                         <p>Especialista en crear interfaces atractivas, dinámicas y responsivas que 
                             brindan una experiencia de usuario única.</p>
-                            <p>Lenguajes y tecnologías dominados:</p>
+                            
                             <ul>
+                                <p>Lenguajes y tecnologías dominados:</p>
                                 <li><FaHtml5 /></li>
                                 <li><FaCss3Alt /></li>
                                 <li><FaJsSquare /></li>
+                                <li><FaReact /></li>
+                                <li><FaBootstrap /></li>
+                                <li><FaGitAlt /></li>
                             </ul>
                     </div>
                     <div className="cardItem">
@@ -40,21 +55,41 @@ function Home() {
                         <li>Juan</li>
                         <CiUser className="user-icon" />
                         <p>Encargado de la lógica del servidor, bases de datos y la integración de sistemas.</p>
-                        <p>Lenguajes y tecnologías dominados:</p>
+                        
+                        <ul>
+                            <p>Lenguajes y tecnologías dominados:</p>
+                            <li><FaJava /></li>
+                            <li><SiSpringboot /></li>
+                            <li><TbBrandMysql /></li>
+                            <li><BiLogoPostgresql /></li>
+                            <li><DiMongodb /></li>
+                        </ul>
                     </div>
                     <div className="cardItem">
                         <h3>UI/UX Designer</h3>
                         <li>Maria</li>
                         <CiUser className="user-icon" />
                         <p>Diseñadora de interfaces y experiencias de usuario que cautivan y retienen a los visitantes.</p>
-                        <p>Lenguajes y tecnologías dominados:</p>
+                        
+                        <ul>
+                            <p>Lenguajes y tecnologías dominados:</p>
+                            <li><FaFigma /></li>
+                        </ul>
                     </div>
                     <div className="cardItem">
                         <h3>Data & Cloud Specialist</h3>
                         <li>Pedro</li>
                         <CiUser className="user-icon" />
                         <p>Experto en bases de datos, integración en la nube y optimización de rendimiento.</p>
-                        <p>Lenguajes y tecnologías dominados:</p>
+                        
+                        <ul>
+                            <p>Lenguajes y tecnologías dominados:</p>
+                            <li><TbBrandMysql /></li>
+                            <li><BiLogoPostgresql /></li>
+                            <li><DiMongodb /></li>
+                            <li><FaAws /></li>
+                            <li><VscAzure /></li>
+                        </ul>
                     </div>
                 </div>
         </div>
