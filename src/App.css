@@ -432,56 +432,43 @@
 }
 
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .content-layout {
-        flex-direction: column;
-        gap: 20px;
-        margin: 0 20px;
-        align-items: stretch;
-        min-height: auto;
-    }
-    
-    .cards {
-        align-self: center;
-    }
-    
-    .tarjeta {
-        width: 80% !important;
-        max-width: 400px;
-        min-width: auto;
-        border-radius: 20px;
-        min-height: auto;
-    }
-    
-    .route-content {
-        min-height: 600px;
-        border-radius: 20px;
-    }
+.menu-icon {
+    font-size: 2rem;
+    color: #578E7E;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.3s ease;
 }
 
-@media (max-width: 396px) {
-    .home-container h1 {
-        font-size: 2rem;
-    }
+.menu-icon:hover {
+    transform: scale(1.1);
+}
 
-    .home-container h2 {
-        font-size: 1.25rem;
-    }
+.redes-r {
+  display: none;
+  gap: 10px;
+}
 
-    .home-container p {
-        font-size: 1rem;
-    }
+.redes-r a{
+  text-decoration: none;
+  
+}
 
-    .cardRol {
-        grid-template-columns: 1fr;
+.redes-r li {
+  list-style: none;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .redes-r {
+        display: flex;
     }
 
     .nav-1 {
-      gap: 5px;
+      display: none;
     }
 
-    .nav-1 a {
-      padding: 0;
+    .nav {
+      justify-content: space-between;
     }
 }

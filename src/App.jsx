@@ -1,6 +1,6 @@
 import Navegation from './Components/Navegation.jsx'
-
-import Card_comp from './Components/componente_tarjeta/Card_comp.jsx'
+import { useState } from 'react'
+import Card_comp from './Components/componente_tarjeta/card_comp.jsx'
 import { useTheme } from './contexts/ThemeContext'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Components/componente_tarjeta/Routes/Home.jsx'
@@ -9,16 +9,25 @@ import './App.css'
 
 function App() {
   const { isDarkMode } = useTheme();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = (menuState) => {
+    setIsMenuOpen(menuState);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <Router>
       <div className={`app-container ${isDarkMode ? 'dark-mode' : ''}`}>
-        <Navegation/>
+        <Navegation onMenuToggle={handleMenuToggle} isMenuOpen={isMenuOpen}/>
         <div className="main-content">
           
           <div className="content-layout">
-            <div className="cards">
-              <Card_comp/>
+            <div className={`cards ${isMenuOpen ? 'mobile-open' : ''}`}>
+              <Card_comp onRouteClick={closeMenu}/>
             </div>
             
             

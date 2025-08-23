@@ -164,3 +164,14 @@
 .dark-mode .home-container li {
   color: #e0e0e0;
 }
+
+/* Estilos para menú móvil en modo oscuro */
+.dark-mode .menu-icon {
+  color: #81c784;
+}
+
+@media (max-width: 768px) {
+  .dark-mode .cards {
+    background-color: rgba(45, 55, 72, 0.95);
+  }
+}
