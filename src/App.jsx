@@ -29,7 +29,7 @@ function App() {
             <div className={`cards ${isMenuOpen ? 'mobile-open' : ''}`}>
               <TarjetaCard onRouteClick={closeMenu}/>
             </div>
-            
+            <br></br>
             
             <div className="route-content">
               <Routes>
