@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v5 # El guion debe estar bajo la "s" de steps
+        uses: sonarsource/sonarqube-scan-action@051838407869675276e5d0a6435c75f24213038a
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
