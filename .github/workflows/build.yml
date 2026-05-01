@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@051838407869675276e5d0a6435c75f24213038a
+        uses: sonarsource/sonarqube-scan-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
@@ -21,7 +21,7 @@ jobs:
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
   
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/portafoliofreelancer.
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/portafoliofreelancer .
         
       - name: Push Docker image to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/portafoliofreelancer
